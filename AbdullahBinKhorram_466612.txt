@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"LAB TASK 1, FINDING THE SUM OF THE FIRST 10 NATURAL NUMBERS."<<endl;
+    int NUM, sumx, sumy;
+   sumx= 0;
+   sumy= 0;
+   cout<<"Enter the first natural number:"<<endl;
+   cin>>NUM;
+   for(int i=1; i<10; i++){
+   	sumy= sumy + i;
+   	sumx= sumy + NUM;
+   	cout<<"Sum of the previous natural numbers:"<<sumx<<endl;
+   	
+   }
+   
+   
+	cout<<"LAB TASK 2, PRINTING A TABLE OF ANY NUMBER."<<endl;
+	int num, Mult;
+	cout<<"Enter the number whose table you want printed:"<<endl;
+	cin>>num;
+	for (int x=0; x<=10; x++){
+	Mult= num*x;
+	cout<<num<<'X'<<x<<'='<<Mult<<endl;}
+	
+	cout<<"LAB TASK 3,PROGRAM TO GENERATE A FACTORIAL."<<endl;
+	int integ, prog, Fact=1;
+	cout<<"Enter the Number whose Factorial you wish to find:";
+	cin>>integ;
+	for(int p=integ; p>=2; p-=2){
+		prog = p * (p-1);
+		Fact = Fact * prog; }
+	  cout<<"The Factorial of the Chosen Number is:"<<Fact<<endl;
+	
+		
+	
+	
+	cout<<"LAB TASK 4, GENERATE THE FIBIONACCI SEQUENCE UP TO A CERTAIN NUMBER."<<endl;
+	int first, second, add, lim;
+	cout<<"Please enter the chosen limit in the sequence:"<<endl;
+	cin>>lim;
+	cout<<"Please enter the first two numbers:"<<endl;
+	cin>>first>>second;
+	for(int j=0; j<= lim-3; j+=1){
+		add = second + first ;
+		first = second;
+		second = add;
+		cout<<add<<endl;
+	}
+	return 0;}
+	
+	
